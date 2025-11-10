@@ -323,14 +323,13 @@ graph TB
 <td align="center" width="50%">
 <h3>📤 File Upload</h3>
 <img width="1919" height="1021" alt="Screenshot 2025-11-10 113408" src="https://github.com/user-attachments/assets/a56f4017-cdc3-43ad-8571-ff3e89813815" />
-<img width="435" height="1032" alt="Screenshot 2025-11-10 113429" src="https://github.com/user-attachments/assets/919b3c14-4272-41d2-86cf-b051864b7485" />
 
 
 <br/><sub>Drag & drop file upload with validation</sub>
 </td>
 <td align="center" width="50%">
-<h3>📊 Statistics Dashboard</h3>
-<img src="./assets/stats_dashboard.png" alt="Stats Dashboard" width="100%"/>
+<h3>📊 Side bar of the assistant</h3>
+<img width="435" height="1032" alt="Screenshot 2025-11-10 113429" src="https://github.com/user-attachments/assets/919b3c14-4272-41d2-86cf-b051864b7485" />
 <br/><sub>Real-time system metrics and analytics</sub>
 </td>
 </tr>
