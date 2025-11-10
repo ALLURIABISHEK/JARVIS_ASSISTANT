@@ -307,19 +307,25 @@ graph TB
 <tr>
 <td align="center" width="50%">
 <h3>🏠 Landing Page</h3>
-<img src="./assets/landing_page.png" alt="Landing Page" width="100%"/>
+<img width="1919" height="1079" alt="Screenshot 2025-11-10 112844" src="https://github.com/user-attachments/assets/65d53c88-2aaa-423e-a5d6-34189c5bc3a4" />
+
 <br/><sub>Modern, responsive UI with glassmorphism design</sub>
 </td>
 <td align="center" width="50%">
 <h3>💬 Chat Interface</h3>
-<img src="./assets/chat_interface.png" alt="Chat Interface" width="100%"/>
+<img width="1915" height="1079" alt="Screenshot 2025-11-10 113332" src="https://github.com/user-attachments/assets/18900b5f-0cba-4121-9825-6014607b57cb" />
+  <img width="1917" height="1079" alt="Screenshot 2025-11-10 113654" src="https://github.com/user-attachments/assets/64666370-171e-4305-8e30-3c4210ddbc60" />
+
 <br/><sub>Real-time conversation with typing indicators</sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
 <h3>📤 File Upload</h3>
-<img src="./assets/upload_interface.png" alt="Upload Interface" width="100%"/>
+<img width="1919" height="1021" alt="Screenshot 2025-11-10 113408" src="https://github.com/user-attachments/assets/a56f4017-cdc3-43ad-8571-ff3e89813815" />
+<img width="435" height="1032" alt="Screenshot 2025-11-10 113429" src="https://github.com/user-attachments/assets/919b3c14-4272-41d2-86cf-b051864b7485" />
+
+
 <br/><sub>Drag & drop file upload with validation</sub>
 </td>
 <td align="center" width="50%">
