@@ -1264,8 +1264,8 @@ SOFTWARE.
 <td align="center" width="100%">
 <img src="https://avatars.githubusercontent.com/u/YOUR_ID?v=4" width="150" style="border-radius: 50%;"/>
 <br/>
-<h3><b>Your Name</b></h3>
-<sub>AI/ML Engineer | Full Stack Developer</sub>
+<h3><b>ALLURI ABISHEK KUMAR</b></h3>
+<sub>Software Engineer | Full Stack Developer</sub>
 <br/><br/>
 <a href="https://github.com/yourusername"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a>
 <a href="https://linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
