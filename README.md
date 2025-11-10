@@ -293,13 +293,40 @@ graph TB
 
 ---
 
+---
+
 <div align="center">
 
 ## 🎬 DEMO
-20251110_114934-ezgif.com-speed
+
+<img src="https://user-images.githubusercontent.com/74038190/212748830-4c709398-a386-4761-84d7-9e10b98fbe6e.gif" width="900">
 
 </div>
 
+### 🎥 **See JARVIS in Action!**
+
+<div align="center">
+
+<img src="./assets/jarvis-animation.gif" alt="JARVIS AI Assistant Demo" width="85%"/>
+
+<br/><br/>
+
+**↑ Full workflow demonstration ↑**
+
+<br/>
+
+<table>
+<tr>
+<td align="center">📤 <b>Upload Documents</b></td>
+<td align="center">💬 <b>Ask Questions</b></td>
+<td align="center">🤖 <b>Get AI Responses</b></td>
+<td align="center">📚 <b>See Sources</b></td>
+</tr>
+</table>
+
+</div>
+
+---
 ### 📸 **Application Screenshots**
 
 <table>
