@@ -487,16 +487,14 @@ pip install -r requirements.txt
 
 ### **Step 4️⃣: Configure API Keys**
 
-Create `config.py`:
+Instead of hardcoding keys, JARVIS now uses environment variables. Create a `.env` file in the root directory (never commit this!):
 
-```python
-# config.py
-PINECONE_API_KEY = "pc-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-INDEX_NAME = "jarvis-knowledge-base"
-GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```bash
+# .env
+PINECONE_API_KEY="your_pinecone_api_key"
+GROQ_API_KEY="your_groq_api_key"
+INDEX_NAME="jarvis-knowledge-base"
 ```
-
-<div align="center">
 
 | Service | Get API Key |
 |:---:|:---:|
@@ -504,6 +502,22 @@ GROQ_API_KEY = "gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 | ⚡ **Groq** | [console.groq.com](https://console.groq.com) |
 
 </div>
+
+### **Step 5️⃣: Deployment to Vercel 🚀**
+
+JARVIS is now optimized for Vercel hosting. 
+
+1. **Install Vercel CLI**: `npm i -g vercel`
+2. **Deploy**: Run `vercel` in the root directory.
+3. **Configure Environment Variables**:
+   In your Vercel Project Settings, add:
+   - `PINECONE_API_KEY`
+   - `GROQ_API_KEY`
+   - `INDEX_NAME`
+   - `VERCEL` = `true`
+
+Vercel will automatically route `/api/*` to the Flask backend and serve the `frontend/` folder as a static site.
+
 
 ### **Step 5️⃣: Initialize Pinecone Index**
 

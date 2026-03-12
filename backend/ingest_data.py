@@ -1,4 +1,8 @@
 import os
+import sys
+# Add current directory to path for imports
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from config import PINECONE_API_KEY, INDEX_NAME
 
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY

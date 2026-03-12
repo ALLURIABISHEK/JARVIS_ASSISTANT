@@ -825,7 +825,9 @@
   </div>
 
   <script>
-    const API_URL = 'http://localhost:5000';
+    const API_URL = window.location.origin === 'null' || window.location.protocol === 'file:' 
+      ? 'http://localhost:5000' 
+      : '';
     const chatMessages = document.getElementById('chatMessages');
     const messageInput = document.getElementById('messageInput');
     const sendButton = document.getElementById('sendButton');

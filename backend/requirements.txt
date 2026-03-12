@@ -1,0 +1,13 @@
+flask==3.0.0
+flask-cors==4.0.0
+werkzeug==3.0.0
+langchain==0.1.0
+langchain-huggingface
+langchain-pinecone
+langchain-community
+pinecone-client==3.0.0
+sentence-transformers
+groq==0.4.0
+pypdf==3.17.0
+python-dotenv
+eneratin

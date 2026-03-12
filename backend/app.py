@@ -1,6 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
+import sys
+# Add current directory to path for Vercel/Production imports
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 from werkzeug.utils import secure_filename
 from config import PINECONE_API_KEY, INDEX_NAME, GROQ_API_KEY
 
@@ -18,21 +22,31 @@ from groq import Groq
 app = Flask(__name__)
 CORS(app)
 
-os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
+# Vercel compatibility: Use /tmp for file uploads as the filesystem is read-only
+if os.environ.get('VERCEL'):
+    UPLOAD_FOLDER = '/tmp/uploads'
+else:
+    UPLOAD_FOLDER = 'uploads'
 
-# File upload configuration
-UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = {'txt', 'pdf'}
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 
-# Initialize components
+# Initialize components with error checking
+if not PINECONE_API_KEY:
+    print("WARNING: PINECONE_API_KEY not found in environment variables.")
+if not GROQ_API_KEY:
+    print("WARNING: GROQ_API_KEY not found in environment variables.")
+
+os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY or ""
+
 pc = Pinecone(api_key=PINECONE_API_KEY)
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 vectorstore = PineconeVectorStore(index_name=INDEX_NAME, embedding=embeddings)
 groq_client = Groq(api_key=GROQ_API_KEY)
+
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
