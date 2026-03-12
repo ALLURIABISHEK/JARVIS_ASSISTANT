@@ -10,4 +10,3 @@ sentence-transformers
 groq==0.4.0
 pypdf==3.17.0
 python-dotenv
-eneratin

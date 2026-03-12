@@ -5,6 +5,10 @@ import sys
 # Add current directory to path for Vercel/Production imports
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+# Vercel compatibility: Set model cache to /tmp as the filesystem is read-only
+os.environ['TRANSFORMERS_CACHE'] = '/tmp/transformers_cache'
+os.environ['SENTENCE_TRANSFORMERS_HOME'] = '/tmp/transformers_cache'
+
 from werkzeug.utils import secure_filename
 from config import PINECONE_API_KEY, INDEX_NAME, GROQ_API_KEY
 
